@@ -13,32 +13,32 @@ header-img: "img/about-bg.jpg"
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-  <blockquote>
-    实践平台，实践舞台<br />
-    精兵强将，信院之光
-  </blockquote>
+    <blockquote>
+        实践平台，实践舞台<br />
+        精兵强将，信院之光
+    </blockquote>
 
-  奇点工作室（Singularity Lab）是经济信息工程学院原官网研发项目组，由西南财经大学经济信息工程学院领导和管理，主要负责西南财经大学经济信息工程学院官网的建设与运营维护。<br />
-  工作室秉承“薪火相传、脚踏实地、锐意进取、通力协作”的团队精神，以建设经济信息工程学院官方网站为中心，为热爱设计与编程的同学提供学习交流与实践创新的平台，辅助教学与科研，助力信息化建设，为数字化校园添砖加瓦，悉心服务西财师生。<br />
+    奇点工作室（Singularity Lab） 是由经济信息工程学院原官网研发项目组发展而来的面向全校的学生组织。 <br />
+    工作室秉承“薪火相传、脚踏实地、锐意进取、通力协作”的团队精神，真诚欢迎热爱设计、应用程序开发与数据分析的同学加入。
 
-  <ul>
-    <li>
-      平等、尊重与包容是我们的组织氛围
-    </li>
-    <li>
-      自由、沟通与协作是我们的工作方式
-    </li>
-    <li>
-      语言、框架与应用是我们的常用工具
-    </li>
-    <li>
-      学习、实践与成长是我们的最终目的
-    </li>
-  </ul>
+    <ul>
+        <li>
+            平等、尊重与包容是我们的组织氛围
+        </li>
+        <li>
+            自由、沟通与协作是我们的工作方式
+        </li>
+        <li>
+            语言、框架与应用是我们的常用工具
+        </li>
+        <li>
+            学习、实践与成长是我们的最终目的
+        </li>
+    </ul>
 
-  <p style="text-align:right;">
-    —— <a href="https://github.com/singularity-lab/Blog-Share">博客 GitHub 地址</a>
-  </p>
+    <p style="text-align:right;">
+        —— <a href="https://github.com/singularity-lab/Blog-Share">博客 GitHub 地址</a>
+    </p>
 
 </div>
 
@@ -49,19 +49,19 @@ header-img: "img/about-bg.jpg"
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
-  var $zh = document.querySelector(".zh");
-  var $en = document.querySelector(".en");
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
 
-  function onLanChange(index) {
-    if (index == 0) {
-      $zh.style.display = "block";
-      $en.style.display = "none";
-    } else {
-      $en.style.display = "block";
-      $zh.style.display = "none";
+    function onLanChange(index) {
+        if (index == 0) {
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        } else {
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
     }
-  }
-  onLanChange(0);
+    onLanChange(0);
 </script>
 
 
@@ -69,7 +69,9 @@ header-img: "img/about-bg.jpg"
 {% if site.duoshuo_username %}
 <!-- 多说评论框 start -->
 <div class="comment">
-  <div class="ds-thread" {% if site.duoshuo_username=="huxblog" %} data-thread-id="1187623191091085319" {% else %} data-thread-key="{{site.duoshuo_username}}/about" {% endif %} data-title="{{page.title}}" data-url="{{site.url}}/about/"></div>
+    <div class="ds-thread" {% if site.duoshuo_username=="huxblog" %} data-thread-id="1187623191091085319" {% else %}
+        data-thread-key="{{site.duoshuo_username}}/about" {% endif %} data-title="{{page.title}}"
+        data-url="{{site.url}}/about/"></div>
 </div>
 <!-- 多说评论框 end -->
 
@@ -78,21 +80,21 @@ header-img: "img/about-bg.jpg"
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-  // dynamic User hacking by Hux
-  var _user = document.getElementById('dsUser').value;
-  // duoshuo comment query.
-  var duoshuoQuery = {
-    short_name: _user
-  };
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] ||
-      document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {
+        short_name: _user
+    };
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] ||
+            document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
 </script>
 <!-- 多说公共JS代码 end -->
 {% endif %}
@@ -101,26 +103,26 @@ header-img: "img/about-bg.jpg"
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
 <div class="comment">
-  <div id="disqus_thread" class="disqus-thread">
+    <div id="disqus_thread" class="disqus-thread">
 
-  </div>
+    </div>
 </div>
 <!-- disqus 评论框 end -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-  /* * * CONFIGURATION VARIABLES * * */
-  var disqus_shortname = "{{site.disqus_username}}";
-  var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
-  var disqus_url = "{{site.url}}{{page.url}}";
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
 
-  (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
