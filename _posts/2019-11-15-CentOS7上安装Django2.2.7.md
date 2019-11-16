@@ -1,8 +1,8 @@
 ---
-layout:		post
+layout:	post
 title:		"CentOS7上安装Django2.2.7"
 date:		2019-11-15
-author:		"王玉松"
+author:	"王玉松"
 header-img:	""
 tags:
     - Django2.2.7
