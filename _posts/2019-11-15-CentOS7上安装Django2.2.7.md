@@ -69,30 +69,27 @@ pip install Django; pip install mysqlclient;
 
 ## 四、过程中出现的已解决的错误
 
-1. pyenv install 3.7.4出现错误：
-	ModuleNotFoundError: No module named '_ctypes'
+1. pyenv install 3.7.4出现错误：ModuleNotFoundError: No module named '_ctypes'
 
 	由于缺少必要的软件包libffi-devel，用yum安装即可。
 ```shell
 yum install libffi-devel -y
 ```
+
 2. python manage.py migrate进行数据库的迁移时提示一下错误：
 django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
 Did you install mysqlclient?
 
 	由于缺少Python第三方软件包mysqlclient而出错。使用pip安装前，应确认是否安装mariadb-devel软件包。在缺少后者的情况下，mysqlclient是无法用pip安装的。 
 
-
-3. 使用Django默认的sqlite数据库时，启动Django出现错误：
-	ModuleNotFoundError: No module named '_sqlite3'
+3. 使用Django默认的sqlite数据库时，启动Django出现错误：ModuleNotFoundError: No module named '_sqlite3'
 	
 	由于sqlite默认安装的版本低于要求。可以到官网下载最新安装包，详见参考资源5。
 
-
 4. 在软件依赖不满足的情况下，即使最后pyenv安装Python版本成功也会显示部分模块没有编译，建议是在安装上述必需的软件包之后再次重新安装Python版本。
 
-
 ## 参考资源
+
 1. [Pyenv教程](https://python.freelycode.com/contribution/detail/155)
 2. [CentOS 7 使用pyenv安装python3.6](https://www.cnblogs.com/afterdawn/p/9392107.html)
 3. [Django文档](https://docs.djangoproject.com/en/2.2/)
